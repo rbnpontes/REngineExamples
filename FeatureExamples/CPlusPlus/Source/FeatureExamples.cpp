@@ -71,7 +71,7 @@ void FeatureExamples::Setup()
     if (!engineParameters_.Contains(EP_RESOURCE_PREFIX_PATHS))
     {
         // TODO: This is dependent on a source build
-        String resourcePrefix = ToString("%s/Resources;%s/Submodules/AtomicExamples/FeatureExamples/CPlusPlus", ATOMIC_ROOT_SOURCE_DIR, ATOMIC_ROOT_SOURCE_DIR);
+        String resourcePrefix = ToString("%s/Resources;%s/Submodules/EngineExamples/FeatureExamples/CPlusPlus", ATOMIC_ROOT_SOURCE_DIR, ATOMIC_ROOT_SOURCE_DIR);
         engineParameters_[EP_RESOURCE_PREFIX_PATHS] = resourcePrefix;
     }
 
