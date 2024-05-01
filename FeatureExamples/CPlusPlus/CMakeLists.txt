@@ -7,7 +7,15 @@ if (WIN32)
     add_definitions(-DATOMIC_WIN32_CONSOLE)
 endif()
 
-add_executable(FeatureExamples ${SOURCE_FILES})
+if (IOS)
+  add_executable(FeatureExamples MACOSX_BUNDLE ${SOURCE_FILES})
+  set_target_properties(FeatureExamples
+      PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME \${PRODUCT_NAME}
+                  MACOSX_BUNDLE_GUI_IDENTIFIER com.rengine.\${PRODUCT_NAME:rfc1034identifier:lower}
+  )
+else()
+  add_executable(FeatureExamples ${SOURCE_FILES})
+endif()
 
 target_link_libraries(FeatureExamples Atomic)
 
