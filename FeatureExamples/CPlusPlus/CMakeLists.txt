@@ -8,6 +8,7 @@ if (WIN32)
 endif()
 
 if (IOS)
+  # build ios
   add_executable(FeatureExamples MACOSX_BUNDLE ${SOURCE_FILES})
   set_target_properties(FeatureExamples
       PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME \${PRODUCT_NAME}
