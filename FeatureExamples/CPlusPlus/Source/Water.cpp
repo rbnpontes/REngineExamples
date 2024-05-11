@@ -69,7 +69,7 @@ void Water::Start()
     SubscribeToEvents();
 
     // Set the mouse mode to use in the sample
-    Sample::InitMouseMode(MM_RELATIVE);
+    Sample::InitMouseMode(MM_ABSOLUTE);
 }
 
 void Water::CreateScene()
