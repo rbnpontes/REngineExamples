@@ -61,8 +61,10 @@ void FeatureExamples::Setup()
     engineParameters_[EP_WINDOW_HEIGHT]  = 960;
     engineParameters_[EP_LOG_NAME]       = GetSubsystem<FileSystem>()->GetAppPreferencesDir("atomic", "logs") + GetTypeName() + ".log";
     engineParameters_[EP_FULL_SCREEN]    = false;
+    engineParameters_[EP_WINDOW_RESIZABLE] = true;
     engineParameters_[EP_HEADLESS ]      = false;
     engineParameters_[EP_SOUND]          = false;
+    engineParameters_[EP_HIGH_DPI]       = true;
     engineParameters_[EP_RESOURCE_PATHS] = "Data;PlayerData;CoreData";
 
     // Construct a search path to find the resource prefix with two entries:
@@ -71,7 +73,11 @@ void FeatureExamples::Setup()
     if (!engineParameters_.Contains(EP_RESOURCE_PREFIX_PATHS))
     {
         // TODO: This is dependent on a source build
+#if RENGINE_PLATFORM_IOS
+        String resourcePrefix = ToString(";../Resources;../.."); 
+#else
         String resourcePrefix = ToString("%s/Resources;%s/Submodules/EngineExamples/FeatureExamples/CPlusPlus", ATOMIC_ROOT_SOURCE_DIR, ATOMIC_ROOT_SOURCE_DIR);
+#endif
         engineParameters_[EP_RESOURCE_PREFIX_PATHS] = resourcePrefix;
     }
 
