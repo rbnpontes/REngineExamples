@@ -4,3 +4,8 @@ Cache/*
 AtomicNET/*
 Resources/FeatureExamples.dll*
 *.pak
+CPlusPlus/Android/.cxx
+CPlusPlus/Android/.gradle
+CPlusPlus/Android/.idea
+CPlusPlus/Android/build
+CPlusPlus/Android/gradle/wrapper
