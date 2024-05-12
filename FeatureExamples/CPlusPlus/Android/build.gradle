@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+// Relative path to engine source code directory. Modify as required.
+def projectSourceDir = '..'
+// Relative path to project source code directory. Modify as required.
+def engineSourceDir = '../../../../../'
+// Minimum required CMake version. This is same as in ../CMakeLists.txt.
+def cmakeVersion = '3.22.0.0+'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId 'com.rengine'
+        versionCode 1
+        versionName '1.0.0'
+        minSdkVersion 17
+        targetSdkVersion 33
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+        }
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_STL=c++_static', '-DANDROID_PLATFORM=android-21', '-DANDROID=1',
+                          '-DBUILD_SHARED_LIBS=ON', '-DATOMIC_SAMPLES=ON', '-DATOMIC_PLAYER=OFF',
+                          '-DATOMIC_EDITOR=OFF', '-DATOMIC_PROFILING=OFF', '-DATOMIC_JAVASCRIPT=OFF',
+                          '-DATOMIC_DOTNET=OFF'
+            }
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            version "${cmakeVersion}"
+            path "${projectSourceDir}/CMakeLists.txt"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+
+        }
+    }
+    sourceSets.main {
+        manifest.srcFile 'AndroidManifest.xml'
+        java.srcDirs = ['src', "${engineSourceDir}/Source/ThirdParty/SDL/android-project/app/src/main/java"]
+        res.srcDirs = ['res']
+        assets.srcDirs = ['assets']
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}

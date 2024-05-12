@@ -3,3 +3,4 @@ BuildSettings.json
 Cache/*
 AtomicNET/*
 Resources/FeatureExamples.dll*
+*.pak

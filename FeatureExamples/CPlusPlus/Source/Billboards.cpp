@@ -115,6 +115,7 @@ void Billboards::CreateScene()
     // Create groups of mushrooms, which act as shadow casters
     const unsigned NUM_MUSHROOMGROUPS = 25;
     const unsigned NUM_MUSHROOMS = 25;
+    SetRandomSeed(1);
 
     for (unsigned i = 0; i < NUM_MUSHROOMGROUPS; ++i)
     {
@@ -305,8 +306,8 @@ void Billboards::HandleUpdate(StringHash eventType, VariantMap& eventData)
     float timeStep = eventData[P_TIMESTEP].GetFloat();
 
     // Move the camera and animate the scene, scale movement with time step
-    MoveCamera(timeStep);
-    AnimateScene(timeStep);
+    //MoveCamera(timeStep);
+    //AnimateScene(timeStep);
 }
 
 void Billboards::HandlePostRenderUpdate(StringHash eventType, VariantMap& eventData)
