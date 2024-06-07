@@ -75,6 +75,8 @@ void FeatureExamples::Setup()
         // TODO: This is dependent on a source build
 #if RENGINE_PLATFORM_IOS
         String resourcePrefix = ToString(";../Resources;../.."); 
+#elif RENGINE_PLATFORM_ANDROID
+        String resourcePrefix = ";Resources";
 #else
         String resourcePrefix = ToString("%s/Resources;%s/Submodules/EngineExamples/FeatureExamples/CPlusPlus", ATOMIC_ROOT_SOURCE_DIR, ATOMIC_ROOT_SOURCE_DIR);
 #endif
