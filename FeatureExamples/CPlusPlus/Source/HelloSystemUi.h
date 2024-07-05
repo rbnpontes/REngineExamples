@@ -23,8 +23,7 @@
 #pragma once
 
 #include "Sample.h"
-#include <Atomic/UI/SystemUI/MessageBox.h>
-
+#include <EngineCore/UI/SystemUI/MessageBox.h>
 
 class HelloSystemUi : public Sample
 {
@@ -46,5 +45,5 @@ private:
     void HandleKeyDown(StringHash eventType, VariantMap& eventData);
 
     /// Reference holding message box.
-    SharedPtr<MessageBox> messageBox_;
+    SharedPtr<Atomic::MessageBox> messageBox_;
 };

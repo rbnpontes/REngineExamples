@@ -21,14 +21,14 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Graphics/AnimatedModel.h>
-#include <Atomic/IO/Log.h>
-#include <Atomic/Physics/PhysicsEvents.h>
-#include <Atomic/Physics/RigidBody.h>
+#include <EngineCore/Graphics/AnimatedModel.h>
+#include <EngineCore/IO/Log.h>
+#include <EngineCore/Physics/PhysicsEvents.h>
+#include <EngineCore/Physics/RigidBody.h>
 
 #include "CreateRagdoll.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 CreateRagdoll::CreateRagdoll(Context* context) :
     Component(context)

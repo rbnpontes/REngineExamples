@@ -23,8 +23,8 @@
 
 #pragma once
 
-#include <Atomic/Input/Controls.h>
-#include <Atomic/Scene/LogicComponent.h>
+#include <EngineCore/Input/Controls.h>
+#include <EngineCore/Scene/LogicComponent.h>
 
 using namespace Atomic;
 

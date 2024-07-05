@@ -21,44 +21,44 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Container/Vector.h>
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/DebugRenderer.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Graphics/Zone.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/IO/FileSystem.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/Scene/SceneEvents.h>
-#include <Atomic/Atomic2D/CollisionBox2D.h>
-#include <Atomic/Atomic2D/CollisionCircle2D.h>
-#include <Atomic/Atomic2D/CollisionEdge2D.h>
-#include <Atomic/Atomic2D/CollisionPolygon2D.h>
-#include <Atomic/Atomic2D/ConstraintDistance2D.h>
-#include <Atomic/Atomic2D/ConstraintFriction2D.h>
-#include <Atomic/Atomic2D/ConstraintGear2D.h>
-#include <Atomic/Atomic2D/ConstraintMotor2D.h>
-#include <Atomic/Atomic2D/ConstraintMouse2D.h>
-#include <Atomic/Atomic2D/ConstraintPrismatic2D.h>
-#include <Atomic/Atomic2D/ConstraintPulley2D.h>
-#include <Atomic/Atomic2D/ConstraintRevolute2D.h>
-#include <Atomic/Atomic2D/ConstraintRope2D.h>
-#include <Atomic/Atomic2D/ConstraintWeld2D.h>
-#include <Atomic/Atomic2D/ConstraintWheel2D.h>
-#include <Atomic/Atomic2D/Drawable2D.h>
-#include <Atomic/Atomic2D/PhysicsWorld2D.h>
-#include <Atomic/Atomic2D/RigidBody2D.h>
-#include <Atomic/Atomic2D/Sprite2D.h>
-#include <Atomic/Atomic2D/StaticSprite2D.h>
+#include <EngineCore/Container/Vector.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/DebugRenderer.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Graphics/Zone.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/IO/FileSystem.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/Scene/SceneEvents.h>
+#include <EngineCore/2D/CollisionBox2D.h>
+#include <EngineCore/2D/CollisionCircle2D.h>
+#include <EngineCore/2D/CollisionEdge2D.h>
+#include <EngineCore/2D/CollisionPolygon2D.h>
+#include <EngineCore/2D/ConstraintDistance2D.h>
+#include <EngineCore/2D/ConstraintFriction2D.h>
+#include <EngineCore/2D/ConstraintGear2D.h>
+#include <EngineCore/2D/ConstraintMotor2D.h>
+#include <EngineCore/2D/ConstraintMouse2D.h>
+#include <EngineCore/2D/ConstraintPrismatic2D.h>
+#include <EngineCore/2D/ConstraintPulley2D.h>
+#include <EngineCore/2D/ConstraintRevolute2D.h>
+#include <EngineCore/2D/ConstraintRope2D.h>
+#include <EngineCore/2D/ConstraintWeld2D.h>
+#include <EngineCore/2D/ConstraintWheel2D.h>
+#include <EngineCore/2D/Drawable2D.h>
+#include <EngineCore/2D/PhysicsWorld2D.h>
+#include <EngineCore/2D/RigidBody2D.h>
+#include <EngineCore/2D/Sprite2D.h>
+#include <EngineCore/2D/StaticSprite2D.h>
 
 #include "Constraints2D.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 
 Node* pickedNode;

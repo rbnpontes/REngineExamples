@@ -21,13 +21,13 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Graphics/AnimatedModel.h>
-#include <Atomic/Graphics/AnimationState.h>
-#include <Atomic/Scene/Scene.h>
+#include <EngineCore/Graphics/AnimatedModel.h>
+#include <EngineCore/Graphics/AnimationState.h>
+#include <EngineCore/Scene/Scene.h>
 
 #include "Mover.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 Mover::Mover(Context* context) :
     LogicComponent(context),

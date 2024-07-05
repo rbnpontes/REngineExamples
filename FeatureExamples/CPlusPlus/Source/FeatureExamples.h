@@ -23,8 +23,8 @@
 
 #pragma once
 
-#include <Atomic/Engine/Application.h>
-#include <Atomic/Input/Input.h>
+#include <EngineCore/Engine/Application.h>
+#include <EngineCore/Input/Input.h>
 
 namespace Atomic
 {

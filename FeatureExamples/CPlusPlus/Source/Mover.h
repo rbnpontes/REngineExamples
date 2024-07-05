@@ -23,7 +23,7 @@
 
 #pragma once
 
-#include <Atomic/Scene/LogicComponent.h>
+#include <EngineCore/Scene/LogicComponent.h>
 
 using namespace Atomic;
 

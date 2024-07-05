@@ -21,27 +21,27 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/DebugRenderer.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/UI/UI.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/Scene/SceneEvents.h>
-#include <Atomic/Atomic2D/CollisionBox2D.h>
-#include <Atomic/Atomic2D/CollisionEdge2D.h>
-#include <Atomic/Atomic2D/ConstraintRevolute2D.h>
-#include <Atomic/Atomic2D/ConstraintRope2D.h>
-#include <Atomic/Atomic2D/PhysicsWorld2D.h>
-#include <Atomic/Atomic2D/RigidBody2D.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/DebugRenderer.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/UI/UI.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/Scene/SceneEvents.h>
+#include <EngineCore/2D/CollisionBox2D.h>
+#include <EngineCore/2D/CollisionEdge2D.h>
+#include <EngineCore/2D/ConstraintRevolute2D.h>
+#include <EngineCore/2D/ConstraintRope2D.h>
+#include <EngineCore/2D/PhysicsWorld2D.h>
+#include <EngineCore/2D/RigidBody2D.h>
 
 #include "PhysicsRope2D.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 static const unsigned NUM_OBJECTS = 10;
 

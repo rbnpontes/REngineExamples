@@ -23,8 +23,8 @@
 
 #pragma once
 
-#include <Atomic/Physics/CollisionShape.h>
-#include <Atomic/Physics/Constraint.h>
+#include <EngineCore/Physics/CollisionShape.h>
+#include <EngineCore/Physics/Constraint.h>
 
 using namespace Atomic;
 

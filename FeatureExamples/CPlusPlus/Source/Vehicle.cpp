@@ -21,17 +21,17 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/Context.h>
-#include <Atomic/Graphics/Material.h>
-#include <Atomic/Graphics/Model.h>
-#include <Atomic/Graphics/StaticModel.h>
-#include <Atomic/Physics/CollisionShape.h>
-#include <Atomic/Physics/Constraint.h>
-#include <Atomic/Physics/PhysicsEvents.h>
-#include <Atomic/Physics/PhysicsWorld.h>
-#include <Atomic/Physics/RigidBody.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
+#include <EngineCore/Core/Context.h>
+#include <EngineCore/Graphics/Material.h>
+#include <EngineCore/Graphics/Model.h>
+#include <EngineCore/Graphics/StaticModel.h>
+#include <EngineCore/Physics/CollisionShape.h>
+#include <EngineCore/Physics/Constraint.h>
+#include <EngineCore/Physics/PhysicsEvents.h>
+#include <EngineCore/Physics/PhysicsWorld.h>
+#include <EngineCore/Physics/RigidBody.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
 
 #include "Vehicle.h"
 

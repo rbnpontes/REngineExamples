@@ -20,25 +20,25 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Material.h>
-#include <Atomic/Graphics/Model.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Graphics/StaticModel.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/Graphics/Text3D/Text3DFont.h>
-#include <Atomic/Graphics/Text3D/Text3DText.h>
-#include <Atomic/Graphics/Text3D/Text3D.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Material.h>
+#include <EngineCore/Graphics/Model.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Graphics/StaticModel.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/Graphics/Text3D/Text3DFont.h>
+#include <EngineCore/Graphics/Text3D/Text3DText.h>
+#include <EngineCore/Graphics/Text3D/Text3D.h>
 
 #include "SignedDistanceFieldText.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 SignedDistanceFieldText::SignedDistanceFieldText(Context* context) :
     Sample(context)

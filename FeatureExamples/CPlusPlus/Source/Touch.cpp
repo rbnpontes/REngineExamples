@@ -21,10 +21,10 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Input/Controls.h>
-#include <Atomic/Input/Input.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Input/Controls.h>
+#include <EngineCore/Input/Input.h>
 
 #include "Character.h"
 #include "Touch.h"

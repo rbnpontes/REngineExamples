@@ -23,9 +23,9 @@
 
 #pragma once
 
-#include <Atomic/Core/Object.h>
-#include <Atomic/Core/StringUtils.h>
-#include <Atomic/Input/Input.h>
+#include <EngineCore/Core/Object.h>
+#include <EngineCore/Core/StringUtils.h>
+#include <EngineCore/Input/Input.h>
 
 namespace Atomic
 {

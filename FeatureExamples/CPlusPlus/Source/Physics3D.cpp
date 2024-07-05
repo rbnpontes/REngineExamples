@@ -21,31 +21,31 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/DebugRenderer.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Light.h>
-#include <Atomic/Graphics/Material.h>
-#include <Atomic/Graphics/Model.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Graphics/Skybox.h>
-#include <Atomic/Graphics/Zone.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/IO/File.h>
-#include <Atomic/IO/FileSystem.h>
-#include <Atomic/Physics/CollisionShape.h>
-#include <Atomic/Physics/PhysicsWorld.h>
-#include <Atomic/Physics/RigidBody.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/UI/UI.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/DebugRenderer.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Light.h>
+#include <EngineCore/Graphics/Material.h>
+#include <EngineCore/Graphics/Model.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Graphics/Skybox.h>
+#include <EngineCore/Graphics/Zone.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/IO/File.h>
+#include <EngineCore/IO/FileSystem.h>
+#include <EngineCore/Physics/CollisionShape.h>
+#include <EngineCore/Physics/PhysicsWorld.h>
+#include <EngineCore/Physics/RigidBody.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/UI/UI.h>
 
 #include "Physics3D.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 Physics3D::Physics3D(Context* context) :
     Sample(context),

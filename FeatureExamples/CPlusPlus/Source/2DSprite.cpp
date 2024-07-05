@@ -22,26 +22,26 @@
 //
 
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Graphics/Zone.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/Atomic2D/AnimatedSprite2D.h>
-#include <Atomic/Atomic2D/AnimationSet2D.h>
-#include <Atomic/Atomic2D/Sprite2D.h>
-#include <Atomic/Scene/SceneEvents.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Graphics/Zone.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/2D/AnimatedSprite2D.h>
+#include <EngineCore/2D/AnimationSet2D.h>
+#include <EngineCore/2D/Sprite2D.h>
+#include <EngineCore/Scene/SceneEvents.h>
 
-#include <Atomic/UI/UI.h>
+#include <EngineCore/UI/UI.h>
 
 #include "2DSprite.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 // Number of static sprites to draw
 static const unsigned NUM_SPRITES = 200;

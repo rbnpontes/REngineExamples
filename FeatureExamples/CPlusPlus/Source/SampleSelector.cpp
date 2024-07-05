@@ -21,14 +21,14 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/IO/Log.h>
-#include <Atomic/Graphics/Renderer.h>
+#include <EngineCore/IO/Log.h>
+#include <EngineCore/Graphics/Renderer.h>
 
-#include <Atomic/UI/UI.h>
-#include <Atomic/UI/UIEvents.h>
-#include <Atomic/UI/UIView.h>
-#include <Atomic/UI/UILayout.h>
-#include <Atomic/UI/UIButton.h>
+#include <EngineCore/UI/UI.h>
+#include <EngineCore/UI/UIEvents.h>
+#include <EngineCore/UI/UIView.h>
+#include <EngineCore/UI/UILayout.h>
+#include <EngineCore/UI/UIButton.h>
 
 #include "FeatureExamples.h"
 #include "SampleSelector.h"

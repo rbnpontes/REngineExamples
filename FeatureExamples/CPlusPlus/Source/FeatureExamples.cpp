@@ -21,24 +21,24 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Engine/Application.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/IO/FileSystem.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/Input/InputEvents.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/Scene/SceneEvents.h>
-#include <Atomic/Graphics/Texture2D.h>
-#include <Atomic/Core/Timer.h>
-#include <Atomic/UI/UI.h>
-#include <Atomic/UI/UIView.h>
-#include <Atomic/Resource/XMLFile.h>
-#include <Atomic/IO/Log.h>
-#include <Atomic/Engine/EngineDefs.h>
+#include <EngineCore/Engine/Application.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/IO/FileSystem.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/Input/InputEvents.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/Scene/SceneEvents.h>
+#include <EngineCore/Graphics/Texture2D.h>
+#include <EngineCore/Core/Timer.h>
+#include <EngineCore/UI/UI.h>
+#include <EngineCore/UI/UIView.h>
+#include <EngineCore/Resource/XMLFile.h>
+#include <EngineCore/IO/Log.h>
+#include <EngineCore/Engine/EngineDefs.h>
 
 #include "FeatureExamples.h"
 #include "SampleSelector.h"
@@ -73,12 +73,12 @@ void FeatureExamples::Setup()
     if (!engineParameters_.Contains(EP_RESOURCE_PREFIX_PATHS))
     {
         // TODO: This is dependent on a source build
-#if RENGINE_PLATFORM_IOS
+#if ENGINE_PLATFORM_IOS
         String resourcePrefix = ToString(";../Resources;../.."); 
-#elif RENGINE_PLATFORM_ANDROID
+#elif ENGINE_PLATFORM_ANDROID
         String resourcePrefix = ";Resources";
 #else
-        String resourcePrefix = ToString("%s/Resources;%s/Submodules/EngineExamples/FeatureExamples/CPlusPlus", ATOMIC_ROOT_SOURCE_DIR, ATOMIC_ROOT_SOURCE_DIR);
+        String resourcePrefix = ToString("%s/Resources;%s/Submodules/EngineExamples/FeatureExamples/CPlusPlus", ENGINE_ROOT_SOURCE_DIR, ENGINE_ROOT_SOURCE_DIR);
 #endif
         engineParameters_[EP_RESOURCE_PREFIX_PATHS] = resourcePrefix;
     }
@@ -132,7 +132,7 @@ void FeatureExamples::SetWindowTitleAndIcon()
     Graphics* graphics = GetSubsystem<Graphics>();
     Image* icon = cache->GetResource<Image>("Textures/AtomicIcon48.png");
     graphics->SetWindowIcon(icon);
-    graphics->SetWindowTitle("Atomic Sample");
+    graphics->SetWindowTitle(ToString("%s Sample", ENGINE_NAME));
 }
 
 

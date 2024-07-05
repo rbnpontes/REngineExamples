@@ -21,11 +21,11 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Scene/Scene.h>
+#include <EngineCore/Scene/Scene.h>
 
 #include "Rotator.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 Rotator::Rotator(Context* context) :
     LogicComponent(context),

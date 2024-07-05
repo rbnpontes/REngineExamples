@@ -21,34 +21,34 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Core/ProcessUtils.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/Light.h>
-#include <Atomic/Graphics/Material.h>
-#include <Atomic/Graphics/Model.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Graphics/StaticModel.h>
-#include <Atomic/Graphics/Terrain.h>
-#include <Atomic/Graphics/Zone.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/IO/FileSystem.h>
-#include <Atomic/Physics/CollisionShape.h>
-#include <Atomic/Physics/Constraint.h>
-#include <Atomic/Physics/PhysicsWorld.h>
-#include <Atomic/Physics/RigidBody.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Resource/Image.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/Scene/SceneEvents.h>
-#include <Atomic/UI/UI.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Core/ProcessUtils.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/Light.h>
+#include <EngineCore/Graphics/Material.h>
+#include <EngineCore/Graphics/Model.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Graphics/StaticModel.h>
+#include <EngineCore/Graphics/Terrain.h>
+#include <EngineCore/Graphics/Zone.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/IO/FileSystem.h>
+#include <EngineCore/Physics/CollisionShape.h>
+#include <EngineCore/Physics/Constraint.h>
+#include <EngineCore/Physics/PhysicsWorld.h>
+#include <EngineCore/Physics/RigidBody.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Resource/Image.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/Scene/SceneEvents.h>
+#include <EngineCore/UI/UI.h>
 
 #include "Vehicle.h"
 #include "VehicleDemo.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 const float CAMERA_DISTANCE = 10.0f;
 

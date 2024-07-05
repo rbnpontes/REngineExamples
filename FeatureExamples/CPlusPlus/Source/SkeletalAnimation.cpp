@@ -21,28 +21,28 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/AnimatedModel.h>
-#include <Atomic/Graphics/Animation.h>
-#include <Atomic/Graphics/AnimationState.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/DebugRenderer.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Light.h>
-#include <Atomic/Graphics/Material.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Graphics/Zone.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/UI/UI.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/AnimatedModel.h>
+#include <EngineCore/Graphics/Animation.h>
+#include <EngineCore/Graphics/AnimationState.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/DebugRenderer.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Light.h>
+#include <EngineCore/Graphics/Material.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Graphics/Zone.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/UI/UI.h>
 
 #include "Mover.h"
 #include "SkeletalAnimation.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 SkeletalAnimation::SkeletalAnimation(Context* context) :
     Sample(context),

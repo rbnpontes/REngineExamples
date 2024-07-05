@@ -22,24 +22,24 @@
 //
 
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Material.h>
-#include <Atomic/Graphics/Model.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Graphics/StaticModel.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Resource/XMLFile.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/UI/UI.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Material.h>
+#include <EngineCore/Graphics/Model.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Graphics/StaticModel.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Resource/XMLFile.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/UI/UI.h>
 
 #include "Particles3D.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 Particles3D::Particles3D(Context* context) :
     Sample(context)

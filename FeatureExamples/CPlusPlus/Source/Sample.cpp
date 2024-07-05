@@ -21,19 +21,19 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/ProcessUtils.h>
-#include <Atomic/IO/FileSystem.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Resource/Image.h>
-#include <Atomic/Scene/Scene.h>
+#include <EngineCore/Core/ProcessUtils.h>
+#include <EngineCore/IO/FileSystem.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Resource/Image.h>
+#include <EngineCore/Scene/Scene.h>
 
-#include <Atomic/UI/UI.h>
-#include <Atomic/UI/UIEvents.h>
-#include <Atomic/UI/UIFontDescription.h>
-#include <Atomic/UI/UIView.h>
-#include <Atomic/UI/UILayout.h>
-#include <Atomic/UI/UIEditField.h>
+#include <EngineCore/UI/UI.h>
+#include <EngineCore/UI/UIEvents.h>
+#include <EngineCore/UI/UIFontDescription.h>
+#include <EngineCore/UI/UIView.h>
+#include <EngineCore/UI/UILayout.h>
+#include <EngineCore/UI/UIEditField.h>
 
 #include "Sample.h"
 #include "SampleSelector.h"

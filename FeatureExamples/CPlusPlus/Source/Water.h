@@ -23,7 +23,7 @@
 
 #pragma once
 
-#include <Atomic/Math/Plane.h>
+#include <EngineCore/Math/Plane.h>
 
 #include "Sample.h"
 

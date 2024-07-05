@@ -21,22 +21,22 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Core/ProcessUtils.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/UI/UI.h>
-#include <Atomic/UI/UIFontDescription.h>
-#include <Atomic/UI/UIView.h>
-#include <Atomic/UI/UILayout.h>
-#include <Atomic/UI/UITextField.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Core/ProcessUtils.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/UI/UI.h>
+#include <EngineCore/UI/UIFontDescription.h>
+#include <EngineCore/UI/UIView.h>
+#include <EngineCore/UI/UILayout.h>
+#include <EngineCore/UI/UITextField.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
 
 #include "FeatureExamples.h"
 #include "HelloWorld.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 HelloWorld::HelloWorld(Context* context) :
     Sample(context)

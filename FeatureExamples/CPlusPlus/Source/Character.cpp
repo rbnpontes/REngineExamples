@@ -21,14 +21,14 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/Context.h>
-#include <Atomic/Graphics/AnimationController.h>
-#include <Atomic/IO/MemoryBuffer.h>
-#include <Atomic/Physics/PhysicsEvents.h>
-#include <Atomic/Physics/PhysicsWorld.h>
-#include <Atomic/Physics/RigidBody.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/Scene/SceneEvents.h>
+#include <EngineCore/Core/Context.h>
+#include <EngineCore/Graphics/AnimationController.h>
+#include <EngineCore/IO/MemoryBuffer.h>
+#include <EngineCore/Physics/PhysicsEvents.h>
+#include <EngineCore/Physics/PhysicsWorld.h>
+#include <EngineCore/Physics/RigidBody.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/Scene/SceneEvents.h>
 
 #include "Character.h"
 

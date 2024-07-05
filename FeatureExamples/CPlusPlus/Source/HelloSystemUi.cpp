@@ -20,25 +20,24 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Core/ProcessUtils.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Zone.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/UI/SystemUI/SystemUI.h>
-#include <Atomic/UI/SystemUI/SystemUIEvents.h>
-#include <Atomic/UI/SystemUI/Console.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Core/ProcessUtils.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Zone.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/UI/SystemUI/SystemUI.h>
+#include <EngineCore/UI/SystemUI/SystemUIEvents.h>
+#include <EngineCore/UI/SystemUI/Console.h>
 
 #include "FeatureExamples.h"
 #include "HelloSystemUi.h"
 
-#include <Atomic/DebugNew.h>
-
+#include <EngineCore/DebugNew.h>
 
 HelloSystemUi::HelloSystemUi(Context* context) :
     Sample(context)

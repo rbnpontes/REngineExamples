@@ -21,34 +21,34 @@
 // THE SOFTWARE.
 //
 
-#include <Atomic/Core/CoreEvents.h>
-#include <Atomic/Engine/Engine.h>
-#include <Atomic/Graphics/AnimatedModel.h>
-#include <Atomic/Graphics/AnimationController.h>
-#include <Atomic/Graphics/Camera.h>
-#include <Atomic/Graphics/DebugRenderer.h>
-#include <Atomic/Graphics/Graphics.h>
-#include <Atomic/Graphics/Light.h>
-#include <Atomic/Graphics/Material.h>
-#include <Atomic/Graphics/Octree.h>
-#include <Atomic/Graphics/Renderer.h>
-#include <Atomic/Graphics/Zone.h>
-#include <Atomic/Graphics/Texture2D.h>
-#include <Atomic/Input/Input.h>
-#include <Atomic/IO/FileSystem.h>
-#include <Atomic/Navigation/CrowdAgent.h>
-#include <Atomic/Navigation/DynamicNavigationMesh.h>
-#include <Atomic/Navigation/Navigable.h>
-#include <Atomic/Navigation/NavigationEvents.h>
-#include <Atomic/Navigation/Obstacle.h>
-#include <Atomic/Navigation/OffMeshConnection.h>
-#include <Atomic/Resource/ResourceCache.h>
-#include <Atomic/Scene/Scene.h>
-#include <Atomic/UI/UI.h>
+#include <EngineCore/Core/CoreEvents.h>
+#include <EngineCore/Engine/Engine.h>
+#include <EngineCore/Graphics/AnimatedModel.h>
+#include <EngineCore/Graphics/AnimationController.h>
+#include <EngineCore/Graphics/Camera.h>
+#include <EngineCore/Graphics/DebugRenderer.h>
+#include <EngineCore/Graphics/Graphics.h>
+#include <EngineCore/Graphics/Light.h>
+#include <EngineCore/Graphics/Material.h>
+#include <EngineCore/Graphics/Octree.h>
+#include <EngineCore/Graphics/Renderer.h>
+#include <EngineCore/Graphics/Zone.h>
+#include <EngineCore/Graphics/Texture2D.h>
+#include <EngineCore/Input/Input.h>
+#include <EngineCore/IO/FileSystem.h>
+#include <EngineCore/Navigation/CrowdAgent.h>
+#include <EngineCore/Navigation/DynamicNavigationMesh.h>
+#include <EngineCore/Navigation/Navigable.h>
+#include <EngineCore/Navigation/NavigationEvents.h>
+#include <EngineCore/Navigation/Obstacle.h>
+#include <EngineCore/Navigation/OffMeshConnection.h>
+#include <EngineCore/Resource/ResourceCache.h>
+#include <EngineCore/Scene/Scene.h>
+#include <EngineCore/UI/UI.h>
 
 #include "CrowdNavigation.h"
 
-#include <Atomic/DebugNew.h>
+#include <EngineCore/DebugNew.h>
 
 static const String INSTRUCTION("instructionText");
 
