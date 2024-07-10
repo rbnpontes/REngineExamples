@@ -222,9 +222,9 @@ void DynamicGeometry::CreateScene()
         vb->SetShadowed(true);
         // We could use the "legacy" element bitmask to define elements for more compact code, but let's demonstrate
         // defining the vertex elements explicitly to allow any element types and order
-        PODVector<VertexElement> elements;
-        elements.Push(VertexElement(TYPE_VECTOR3, SEM_POSITION));
-        elements.Push(VertexElement(TYPE_VECTOR3, SEM_NORMAL));
+        ea::vector<VertexElement> elements;
+        elements.push_back(VertexElement(TYPE_VECTOR3, SEM_POSITION));
+        elements.push_back(VertexElement(TYPE_VECTOR3, SEM_NORMAL));
         vb->SetSize(numVertices, elements);
         vb->SetData(vertexData);
 
