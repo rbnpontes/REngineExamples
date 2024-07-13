@@ -2,7 +2,7 @@
 
 const BROWSER_WIDTH = 1024;
 const BROWSER_HEIGHT = 1024;
-const BROWSER_URL = "http://www.atomicgameengine.com/";
+const BROWSER_URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
 // First create a web texture and set filtering mode
 var webTexture = new WebView.WebTexture2D();
