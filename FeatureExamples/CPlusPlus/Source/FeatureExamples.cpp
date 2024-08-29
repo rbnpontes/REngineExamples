@@ -59,7 +59,7 @@ void FeatureExamples::Setup()
     engineParameters_[EP_WINDOW_TITLE]   = GetTypeName();
     engineParameters_[EP_WINDOW_WIDTH]   = 1440;
     engineParameters_[EP_WINDOW_HEIGHT]  = 960;
-    engineParameters_[EP_LOG_NAME]       = GetSubsystem<FileSystem>()->GetAppPreferencesDir("atomic", "logs") + GetTypeName() + ".log";
+    engineParameters_[EP_LOG_NAME]       = GetSubsystem<FileSystem>()->GetAppPreferencesDir("rengine", "logs") + GetTypeName() + ".log";
     engineParameters_[EP_FULL_SCREEN]    = false;
     engineParameters_[EP_WINDOW_RESIZABLE] = true;
     engineParameters_[EP_HEADLESS ]      = false;
@@ -78,7 +78,10 @@ void FeatureExamples::Setup()
 #elif ENGINE_PLATFORM_ANDROID
         String resourcePrefix = ";Resources";
 #else
-        String resourcePrefix = ToString("%s/Resources;%s/Submodules/EngineExamples/FeatureExamples/CPlusPlus", ENGINE_ROOT_SOURCE_DIR, ENGINE_ROOT_SOURCE_DIR);
+        String resourcePrefix = ToString("%s/Resources;%s/Submodules/EngineExamples/FeatureExamples/CPlusPlus", 
+            ENGINE_ROOT_SOURCE_DIR, 
+            ENGINE_ROOT_SOURCE_DIR
+        );
 #endif
         engineParameters_[EP_RESOURCE_PREFIX_PATHS] = resourcePrefix;
     }

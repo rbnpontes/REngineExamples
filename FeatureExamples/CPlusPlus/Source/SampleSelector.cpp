@@ -1,6 +1,7 @@
 //
 // Copyright (c) 2008-2016 the Urho3D project.
 // Copyright (c) 2014-2016, THUNDERBEAST GAMES LLC All rights reserved
+// Copyright (c) 2024, REngine
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +22,6 @@
 // THE SOFTWARE.
 //
 
-#include <EngineCore/IO/Log.h>
 #include <EngineCore/Graphics/Renderer.h>
 
 #include <EngineCore/UI/UI.h>
@@ -59,6 +59,7 @@
 #include "LightAnimation.h"
 #include "Particles3D.h"
 #include "SignedDistanceFieldText.h"
+#include "./Plugin.h"
 
 
 SampleSelector::SampleSelector(Context* context) :
@@ -79,6 +80,7 @@ SampleSelector::SampleSelector(Context* context) :
         "Hello GUI",
         "Hello GUI 3D",
         "Hello SystemUI",
+        "Plugin System",
         "Render to Texture",
         "2D Sprite",
         "2D Physics",
@@ -100,7 +102,7 @@ SampleSelector::SampleSelector(Context* context) :
         "3D Vehicle Demo",
         "3D Crowd Navigation",
         "3D Water",
-        "3D Multiple Viewports"
+        "3D Multiple Viewports",
     };
 
     for (size_t i = 0; i < sizeof(examples) / sizeof(examples[0]); i++)
@@ -151,7 +153,7 @@ void SampleSelector::HandleWidgetEvent(StringHash eventType, VariantMap& eventDa
         // Goodbye UI
         FeatureExamples::GetUIView()->DeleteAllChildren();
 
-        currentSample_ = 0;
+        currentSample_ = nullptr;
 
         if (exampleName == "Hello World")
         {
@@ -168,6 +170,10 @@ void SampleSelector::HandleWidgetEvent(StringHash eventType, VariantMap& eventDa
         else if (exampleName == "Hello SystemUI")
         {
             currentSample_ = new HelloSystemUi(context_);
+        }
+        else if (exampleName == "Plugin System")
+        {
+            currentSample_ = new Plugin(context_);
         }
         else if (exampleName == "2D Sprite")
         {

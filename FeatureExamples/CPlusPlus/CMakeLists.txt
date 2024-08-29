@@ -3,6 +3,8 @@
 # Define source files
 file (GLOB SOURCE_FILES Source/*.cpp Source/*.h)
 
+add_subdirectory(Source/SamplePlugin)
+
 if (WIN32)
     add_definitions(-DENGINE_WIN32_CONSOLE)
 endif()
@@ -37,4 +39,5 @@ else()
   add_executable(FeatureExamples ${SOURCE_FILES})
 endif()
 
+add_dependencies(FeatureExamples SamplePlugin)
 target_link_libraries(FeatureExamples ${ENGINE_CORE_LIB_TARGET})
